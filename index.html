@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Robert Stow Web Designer and Developer</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <section class="container">
+        <img src="images/logo.png" alt="Website Logo">
+      </section>
+      <section class="container navigation">
+        <a href="index.html">HOME</a>
+        <a href="resume.html">RESUME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="https://github.com/robatronPrime" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://twitter.com/robstow94_stow" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/r.stow/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      </section>
+    </header>
+    <main class="container main">
+      <section class="container splash">
+        <img src="images/splash.jpg" alt="splash screen image">
+      </section>
+
+      <section class="container profile">
+        <h1>Web Developer and Designer</h1>
+        <img src="images/profile.png" alt="profile picture" class="profile">
+      </section>
+
+      <section id="intro" class="container intro">
+        <span class="container introSection">
+          <h2>Final year Portsmouth University student.</h2>
+          <p>Interested in HTML5, CSS3, NodeJS, JavaScript, and responsive web development.</p>
+          <p>Click the button to checkout some of my projects.</p>
+          <button type="button" name="projects" onclick="openProjects()" class="button">PROJECTS</button>
+        </span>
+        <span class="container introSection introSection2">
+          <h2>Hi, I'm Robert Stow!</h2>
+          <p>Web development and design has been my passion since college.</p>
+          <p>Click the button to find out more about me.</p>
+          <button type="button" name="projects" onclick="openAbout()" class="button">ABOUT</button>
+        </span>
+      </section>
+
+      <section id="projects" class="container projects">
+        <span onclick="closeProjects()" class="closeProjects">
+          <i class="fas fa-times-circle fa-3x"></i>
+        </span>
+        <h1>Robatron's Projects</h1>
+
+        <span class="container project">
+          <h2>ImagineMemory</h2>
+          <p>This website is my final year project that I did at Portsmouth University.</p>
+          <p>It is a memory game website for users who have dementia.</p>
+          <img src="images/site2.png" alt="ImagineMemory screen shot">
+          <span class="container projectLinks">
+            <a href="https://robatronprime.github.io/ImagineMemory/static/" target="_blank" class="button">WEBSITE</a>
+            <a href="https://github.com/robatronPrime/ImagineMemory" target="_blank" class="button">GITHUB</a>
+          </span>
+        </span>
+
+        <span class="container project">
+          <h2>British Port Locator</h2>
+          <p>This website is a project that I worked on in a team of three for web research.</p>
+          <img src="images/site3.jpg" alt="British Port Locator screen shot">
+          <span class="container projectLinks">
+            <a href="https://robatronprime.github.io/WebResSprint3/" target="_blank" class="button">WEBSITE</a>
+            <a href="https://github.com/robatronPrime/WebResSprint3" target="_blank" class="button">GITHUB</a>
+          </span>
+        </span>
+
+        <span class="container project">
+          <h2>maisiewilkins.co.uk</h2>
+          <p>This website was a project I did for a womenswear designer during my placement year.</p>
+          <img src="images/site1.jpg" alt="maisiewilkins.co.uk screen shot">
+          <span class="container projectLinks">
+            <a href="https://robatronprime.github.io/maisiewilkins.co.uk/" target="_blank" class="button">WEBSITE</a>
+            <a href="https://github.com/robatronPrime/maisiewilkins.co.uk" target="_blank" class="button">GITHUB</a>
+          </span>
+        </span>
+      </section>
+
+      <section id="about" class="container about">
+        <span onclick="closeAbout()" class="closeProjects">
+          <i class="fas fa-times-circle fa-3x"></i>
+        </span>
+        <h1>About Robatron</h1>
+        <p>If you were wondering "Robatron" is a nickname I was given at an old work place of mine and it kind of stuck.</p>
+        <p>I even use it for my Steam account.</p>
+        <a href="https://steamcommunity.com/id/robstow/" target="_blank" class="iconButton"><i class="fab fa-steam fa-3x"></i></a>
+        <p>I have recently discovered bouldering and I love it. My friends and I go to a place called Red Spider Climbing, I would recommend going.</p>
+        <p>My favorite single player game would have to be Witcher 3, and my favorite multiplayer game would have to be Overwatch.</p>
+        <div class="gamesSlideShow">
+          <span class="mySlides">
+            <p>GTA5: How to fly</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/916923503858833990/0A89F9144DC5A2652F5EA9F4DC000DF038A9DC38/" alt="slide-image1">
+          </span>
+          <span class="mySlides">
+            <p>GTA5: How to fly 2</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/916923503858833810/2E0AB280C85DA1528F3636B6AB6272C5FB33F911/" alt="slide-image2">
+          </span>
+          <span class="mySlides">
+            <p>Shadow Warrior: The true masters</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/857228336822147308/70E115D34A9738BBE08E1EBE14655368AB702876/" alt="slide-image3">
+          </span>
+          <span class="mySlides">
+            <p>PubG: The builders took a break</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/857226971850786160/6A80007F7B23FA24D18846C97C2DC2ED7A9F4CF3/" alt="slide-image4">
+          </span>
+          <span class="mySlides">
+            <p>Rogue Legacy: Nope</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/857226603476615486/84B9BB1B947FBEE1C90FF57A19C63C3ED7338145/" alt="slide-image5">
+          </span>
+          <span class="mySlides">
+            <p>MGS5: Best doggo</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/277344099170194511/CC9CCF0872FECCF7ACA375029C79491B5BC2EE9E/" alt="slide-image6">
+          </span>
+          <span class="mySlides">
+            <p>Fallout 4: He's just mooved in</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/394425584107731045/51B66D63992842D2C8F3C1A43AF650E9794878D6/" alt="slide-image7">
+          </span>
+          <span class="mySlides">
+            <p>Gary's Mod: Mr Boneman</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/44244007313623102/1FBC579AAD65E5FC8D122BC8792730F5662C0704/" alt="slide-image8">
+          </span>
+          <span class="mySlides">
+            <p>Just Cause 2 Multiplayer: Like a glove</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/597032953606768701/E60B80F63B0D05907081502B0D3088B84D63BFBD/" alt="slide-image9">
+          </span>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript">
+  const projectsSection = document.getElementById("projects");
+  const introSection = document.getElementById("intro");
+  const aboutSection = document.getElementById("about");
+  function openProjects() {
+    projectsSection.style.width = "100%";
+    introSection.style.display = "none";
+  }
+
+  function closeProjects() {
+    projectsSection.style.width = "0";
+    window.setTimeout(showIntro, 500);
+  }
+
+  function openAbout() {
+    aboutSection.style.width = "100%";
+    introSection.style.display = "none";
+  }
+
+  function closeAbout() {
+    aboutSection.style.width = "0";
+    window.setTimeout(showIntro, 500);
+  }
+
+  function showIntro() {
+    introSection.style.display = "flex";
+  }
+
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (slide = 0; slide < slides.length; slide++) {
+         slides[slide].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > slides.length) {myIndex = 1}
+      slides[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+  </script>
+</html>
