@@ -20,14 +20,15 @@
         <a href="https://github.com/robatronPrime" target="_blank"><i class="fab fa-github fa-2x"></i></a>
         <a href="https://twitter.com/robstow94_stow" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
         <a href="https://www.instagram.com/r.stow/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/robert-stow-b664b013b/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
       </section>
     </header>
-    <main class="container main">
-      <section class="container splash">
+    <main class="container main" >
+      <section class="container splash" id="hideSplash">
         <img src="images/splash.jpg" alt="splash screen image">
       </section>
 
-      <section class="container profile">
+      <section class="container profile" id="hideSplash2">
         <h1>Web Developer and Designer</h1>
         <img src="images/profile.png" alt="profile picture" class="profile">
       </section>
@@ -59,8 +60,8 @@
           <p>It is a memory game website for users who have dementia.</p>
           <img src="images/site2.png" alt="ImagineMemory screen shot">
           <span class="container projectLinks">
-            <a href="https://robatronprime.github.io/ImagineMemory/static/" target="_blank" class="button">WEBSITE</a>
-            <a href="https://github.com/robatronPrime/ImagineMemory" target="_blank" class="button">GITHUB</a>
+            <a href="https://robatronprime.github.io/ImagineMemory/static/" target="_blank" class="button website">WEBSITE</a>
+            <a href="https://github.com/robatronPrime/ImagineMemory" target="_blank" class="button github">GITHUB</a>
           </span>
         </span>
 
@@ -69,8 +70,8 @@
           <p>This website is a project that I worked on in a team of three for web research.</p>
           <img src="images/site3.jpg" alt="British Port Locator screen shot">
           <span class="container projectLinks">
-            <a href="https://robatronprime.github.io/WebResSprint3/" target="_blank" class="button">WEBSITE</a>
-            <a href="https://github.com/robatronPrime/WebResSprint3" target="_blank" class="button">GITHUB</a>
+            <a href="https://robatronprime.github.io/WebResSprint3/" target="_blank" class="button website">WEBSITE</a>
+            <a href="https://github.com/robatronPrime/WebResSprint3" target="_blank" class="button github">GITHUB</a>
           </span>
         </span>
 
@@ -79,8 +80,8 @@
           <p>This website was a project I did for a womenswear designer during my placement year.</p>
           <img src="images/site1.jpg" alt="maisiewilkins.co.uk screen shot">
           <span class="container projectLinks">
-            <a href="https://robatronprime.github.io/maisiewilkins.co.uk/" target="_blank" class="button">WEBSITE</a>
-            <a href="https://github.com/robatronPrime/maisiewilkins.co.uk" target="_blank" class="button">GITHUB</a>
+            <a href="https://robatronprime.github.io/maisiewilkins.co.uk/" target="_blank" class="button website">WEBSITE</a>
+            <a href="https://github.com/robatronPrime/maisiewilkins.co.uk" target="_blank" class="button github">GITHUB</a>
           </span>
         </span>
       </section>
@@ -89,12 +90,14 @@
         <span onclick="closeAbout()" class="closeProjects">
           <i class="fas fa-times-circle fa-3x"></i>
         </span>
-        <h1>About Robatron</h1>
-        <p>If you were wondering "Robatron" is a nickname I was given at an old work place of mine and it kind of stuck.</p>
-        <p>I even use it for my Steam account.</p>
-        <a href="https://steamcommunity.com/id/robstow/" target="_blank" class="iconButton"><i class="fab fa-steam fa-3x"></i></a>
-        <p>I have recently discovered bouldering and I love it. My friends and I go to a place called Red Spider Climbing, I would recommend going.</p>
-        <p>My favorite single player game would have to be Witcher 3, and my favorite multiplayer game would have to be Overwatch.</p>
+        <span class="aboutContents">
+          <h1 class="aboutItem">About Robatron</h1>
+          <p class="aboutItem">If you were wondering "Robatron" is a nickname I was given at an old work place of mine and it kind of stuck.</p>
+          <p class="aboutItem">I even use it for my Steam account.</p>
+          <a href="https://steamcommunity.com/id/robstow/" target="_blank" class="iconButton"><i class="fab fa-steam fa-3x"></i></a>
+          <p>I have recently discovered bouldering and I love it. My friends and I go to a place called Red Spider Climbing, I would recommend going.</p>
+          <p>My favorite single player game would have to be Witcher 3, and my favorite multiplayer game would have to be Overwatch.</p>
+        </span>
         <div class="gamesSlideShow">
           <span class="mySlides">
             <p>GTA5: How to fly</p>
@@ -140,28 +143,49 @@
   const projectsSection = document.getElementById("projects");
   const introSection = document.getElementById("intro");
   const aboutSection = document.getElementById("about");
+  const splashSection = document.getElementById('hideSplash');
+  const splashSection2 = document.getElementById('hideSplash2');
+
   function openProjects() {
     projectsSection.style.width = "100%";
-    introSection.style.display = "none";
+    window.setTimeout(hideIntro, 200);
+    window.setTimeout(hideSplash, 200);
   }
 
   function closeProjects() {
     projectsSection.style.width = "0";
-    window.setTimeout(showIntro, 500);
+    window.setTimeout(showIntro, 200);
+    window.setTimeout(showSplash, 200);
   }
 
   function openAbout() {
     aboutSection.style.width = "100%";
-    introSection.style.display = "none";
+    window.setTimeout(hideIntro, 200);
+    window.setTimeout(hideSplash, 200);
   }
 
   function closeAbout() {
     aboutSection.style.width = "0";
-    window.setTimeout(showIntro, 500);
+    window.setTimeout(showIntro, 200);
+    window.setTimeout(showSplash, 200);
   }
 
   function showIntro() {
     introSection.style.display = "flex";
+  }
+
+  function hideIntro() {
+    introSection.style.display = "none";
+  }
+
+  function showSplash() {
+    splashSection.style.display = "flex";
+    splashSection2.style.display = "flex";
+  }
+
+  function hideSplash() {
+    splashSection.style.display = "none";
+    splashSection2.style.display = "none";
   }
 
   var myIndex = 0;
