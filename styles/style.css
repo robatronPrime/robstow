@@ -104,11 +104,12 @@ header img {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 50%;
+  height: 55%;
   background: linear-gradient(325deg, #595963 50%, transparent 30%), #64373D;
   transition: 0.5s;
   left: 0;
   padding: 2em;
+  overflow-x: hidden;
 }
 
 .introSection {
@@ -195,7 +196,6 @@ header img {
   background: #595963;
   align-items: center;
   width: 0;
-  height: 100%;
   flex-direction: column;
   top: 7%;
   transition: 0.5s;
@@ -235,6 +235,7 @@ header img {
   position: absolute;
   font-size: larger;
   padding: 1em;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .resume {
@@ -267,7 +268,7 @@ header img {
 .contact {
   background: #64373D;
   width: 100%;
-  padding: 11%;
+  padding: 2%;
   flex-direction: column;
   align-items: center;
 }
@@ -409,6 +410,99 @@ textarea {
   }
 
   .profileSection li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  header {
+    height: 20%;
+  }
+
+  header img {
+    height: 8em;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 3.5vw;
+  }
+
+  h3, p, a {
+    font-size: 3vw;
+  }
+
+  .button {
+    font-size: 1.5em;
+  }
+
+  .projects {
+    top: 20%;
+  }
+
+  .about {
+    top: 20%;
+  }
+
+  .profileSection li {
     font-size: 2em;
   }
+
+  .splash {
+    padding-bottom: 15%;
+  }
+
+  .profile {
+    top: 23%;
+  }
+
+  .website {
+    font-size: 1em;
+  }
+
+  .github {
+    font-size: 1em;
+  }
+
+  .mySlides p {
+    font-size: 2em;
+  }
+
+  input, textarea {
+    font: 2em 'Open Sans', sans-serif;
+    width: 450px;
+  }
+
+  form .button {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 900px) {
+  header img {
+    height: 6em;
+  }
+
+  .button {
+    width: 50%;
+  }
+
+  .website {
+    font-size: 1.5em;
+    width: 43%;
+  }
+
+  .github {
+    font-size: 1.5em;
+    width: 36%;
+  }
+
+  .profileSection li {
+    font-size: 1.5em;
+  }
+
 }
