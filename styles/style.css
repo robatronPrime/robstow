@@ -1,8 +1,7 @@
 html,body {
-  width: 100%;
   margin:0px;
   display: flex;
-  background: #D7DCDA;
+  background: #595963;
   font-family: 'Roboto', sans-serif;
   height: 100%;
 }
@@ -31,7 +30,7 @@ p {
 header {
   position: fixed;
   top: 0;
-  height: 7%;
+  height: 10%;
   width: 100%;
   background: linear-gradient(225deg, #595963 35%, transparent 30%), #64373D;
   justify-content: space-between;
@@ -86,7 +85,7 @@ header img {
   width: 36%;
   justify-content: center;
   position: absolute;
-  top: 4em;
+  top: 6em;
 }
 
 .profile h1 {
@@ -338,7 +337,7 @@ textarea {
   }
 
   header img {
-    height: 6em;
+    height: 5em;
   }
 
   .navigation {
@@ -421,7 +420,7 @@ textarea {
   }
 
   header img {
-    height: 8em;
+    height: 6em;
   }
 
   h1 {
@@ -504,5 +503,56 @@ textarea {
   .profileSection li {
     font-size: 1.5em;
   }
+}
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 5.5vw;
+  }
+
+  h3, p, a {
+      font-size: 4.5vw;
+  }
+
+  header img {
+    height: 4em;
+  }
+
+  .splash img {
+    padding-top: 20%;
+  }
+
+  .profile {
+    top: 23%;
+  }
+
+  .intro {
+    background: linear-gradient(180deg, #595963 50%, transparent 50%), #64373D;
+    padding: .5em;
+  }
+
+  .introSection {
+    width: 100%;
+    height: 46%;
+    padding: .5em;
+  }
+
+  .introSection2 {
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+  }
+
+  .button {
+    font-size: 1em;
+  }
+
+  .profileSection li {
+    margin-left: .5em;
+    font-size: 1em;
+  }
 }
