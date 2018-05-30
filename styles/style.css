@@ -522,6 +522,10 @@ textarea {
     height: 4em;
   }
 
+  .splash {
+    padding-bottom: 20%;
+}
+
   .splash img {
     padding-top: 20%;
   }
@@ -531,20 +535,20 @@ textarea {
   }
 
   .intro {
-    background: linear-gradient(180deg, #595963 50%, transparent 50%), #64373D;
-    padding: .5em;
+    background: transparent;
   }
 
   .introSection {
     width: 100%;
-    height: 46%;
-    padding: .5em;
+    height: 100%;
+    background: #64373D
   }
 
   .introSection2 {
     justify-content: flex-start;
     align-self: flex-start;
     align-items: flex-start;
+    background: #595963
   }
 
   .button {
@@ -553,6 +557,10 @@ textarea {
 
   .profileSection li {
     margin-left: .5em;
+    font-size: 1em;
+  }
+
+  .mySlides p {
     font-size: 1em;
   }
 }
